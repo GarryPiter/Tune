@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tuningTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-"/>
+
+    <TextView
+        android:id="@+id/noteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-"/>
+
+    <SeekBar
+        android:id="@+id/toleranceSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:max="50"
+        android:progress="25"
+        android:thumb="-"/>
+
+    <TextView
+        android:id="@+id/toleranceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        tools:text="Tolerance: 0.5"/>
+
+    <Button
+        android:id="@+id/customTuningButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="-"/>
+
+    <Spinner
+        android:id="@+id/tuningSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/tune_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="-"/>
+
+    <EditText
+        android:id="@+id/custom_tuning_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="-"/>
+
+</LinearLayout>
