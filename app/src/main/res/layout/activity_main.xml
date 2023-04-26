@@ -22,11 +22,11 @@
     <SeekBar
         android:id="@+id/toleranceSeekBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="4dp"
         android:layout_margin="16dp"
         android:max="50"
         android:progress="25"
-        android:thumb="-"/>
+        android:thumb="@drawable/indicator_green" />
 
     <TextView
         android:id="@+id/toleranceTextView"

@@ -22,6 +22,7 @@ import androidx.core.app.ActivityCompat;
 
 public class MainActivity extends AppCompatActivity {
     private static final int REQUEST_RECORD_AUDIO_PERMISSION = 200;
+
     private static final int SAMPLE_RATE = 44100;
     private static final int CHANNELS = AudioFormat.CHANNEL_IN_MONO;
     private static final int ENCODING = AudioFormat.ENCODING_PCM_16BIT;
@@ -162,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private class Tuner {
-        private static final double[] STANDARD_TUNING = {E2, A2, D3, G3, B3, E4}; // E A D G B E
+        private final double[] STANDARD_TUNING = {E2, A2, D3, G3, B3, E4}; // E A D G B E
         private static final double E2 = 82.41; // hertz
         private static final double A2 = 110.00; // hertz
         private static final double D3 = 146.83; // hertz
@@ -193,6 +194,7 @@ public class MainActivity extends AppCompatActivity {
 
             return fundamentalFrequency;
         }
+
 
         public void setTuning(int position) {
             switch (position) {
